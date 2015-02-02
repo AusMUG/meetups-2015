@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="google-site-verification" content="ldjsjCxxRbZhvNW2qQiVooQhK5qrrFsT_H-q7c3GKwY">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <script src="../javascripts/d3.min.js"></script>
+    <script src="../javascripts/topojson.js"></script>
+    <script src="../javascripts/queue.min.js"></script>
+    <script src="../javascripts/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="App" ng-controller="Controller" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="austin-voting-table-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Precinct</th>
+                  <th>Turnout</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="r in tablePrecincts" ng-click="select(r.id)" ng-class="{active: r.selected}">
+                  <td>{{r.id}}</td>
+                  <td>{{r.turnout | number:2}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="austin-voting-container">
+            <div class="austin-voting-title"></div>
+            <div class="austin-voting-legend">
+              <div class="austin-voting-key">
+                <div class="austin-voting-key-0"></div>
+                <div class="austin-voting-key-25"></div>
+                <div class="austin-voting-key-50"></div>
+                <div class="austin-voting-key-75"></div>
+                <div class="austin-voting-key-100"></div>
+              </div>
+            </div><map data="data" selected="selected"></map>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="map.js">   </script>
+    <script src="directive.js"></script>
+  </body>
+</html>
