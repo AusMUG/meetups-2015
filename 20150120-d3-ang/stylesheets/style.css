@@ -1,0 +1,52 @@
+a {
+  color: #d44c1b;
+}
+a:hover {
+  color: #6a260d;
+}
+.container {
+  width: 1170px !important;
+}
+body {
+  padding-bottom: 50px;
+  font-weight: 300;
+}
+body p {
+  font-weight: 400;
+}
+.ep-header {
+  font-size: 2.5em;
+  height: 75px;
+  padding: 0 10px 0 10px;
+  position: relative;
+  background: #222;
+  margin-bottom: 20px;
+}
+.ep-header img {
+  height: 56.25px;
+  position: absolute;
+  top: 9.375px;
+  width: auto;
+  cursor: pointer;
+}
+.ep-header a:hover {
+  padding-bottom: 5px;
+}
+.ep-header-small {
+  font-size: 2.5em;
+  height: 50px;
+  padding: 0 10px 0 10px;
+  position: relative;
+  background: #222;
+  margin-bottom: 20px;
+}
+.ep-header-small img {
+  height: 37.5px;
+  position: absolute;
+  top: 6.25px;
+  width: auto;
+  cursor: pointer;
+}
+.ep-header-small a:hover {
+  padding-bottom: 5px;
+}

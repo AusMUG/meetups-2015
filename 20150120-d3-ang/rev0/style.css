@@ -1,0 +1,75 @@
+.ih35 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+.austin-voting-container {
+  position: relative;
+}
+.austin-voting-container .background {
+  fill: #e6e6e6;
+}
+.austin-voting-container .austin-voting-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 36px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.austin-voting-container .austin-voting-title:before {
+  content: 'Voter Turnout by Precinct';
+}
+.austin-voting-container .austin-voting-legend {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  width: 50px;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  color: #000;
+  line-height: 25px;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key > div {
+  width: 100%;
+  height: 25px;
+  font-size: 12px;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key > div:before {
+  position: absolute;
+  left: 105%;
+  width: 75px;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-0 {
+  background: #fef0d9;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-0:before {
+  content: '0%-20%';
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-25 {
+  background: #fdcc8a;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-25:before {
+  content: '20%-40%';
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-50 {
+  background: #fc8d59;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-50:before {
+  content: '40%-60%';
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-75 {
+  background: #e34a33;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-75:before {
+  content: '60%-80%';
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-100 {
+  background: #b30000;
+}
+.austin-voting-container .austin-voting-legend .austin-voting-key .austin-voting-key-100:before {
+  content: '80%-100%';
+}
